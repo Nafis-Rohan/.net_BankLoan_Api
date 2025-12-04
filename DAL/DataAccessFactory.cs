@@ -29,16 +29,28 @@ namespace DAL
         
         }
 
+        public static IRepo<Token , string, Token> TokenData()
+        {
+            return new TokenRepo();
+        }
 
-        public static IInterestRateCount InterestData()
+
+        public static IInterestRateCount<float> InterestData()
         {
             return new LoanApplicationRepo();
         }
 
-        public static IEMICal EmiData() {
+        public static IEMICal<float> EmiData() {
 
             return new LoanApplicationRepo();
         }
+
+        public static IAuth<bool> AuthData()
+        {
+            return new CustomerRepo();
+        }
+
+        
 
 
     }

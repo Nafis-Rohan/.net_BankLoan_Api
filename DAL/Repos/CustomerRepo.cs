@@ -10,13 +10,18 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class CustomerRepo : IRepo<Customer,int,bool>
+    public class CustomerRepo : IRepo<Customer,int,bool> , IAuth<bool>
     {
         UMSContext db;
 
         public CustomerRepo() { 
             
             db = new UMSContext();
+        }
+
+        public bool Authenticate(string userName, string password) {
+            var data = db.Customers.FirstOrDefault(u=>u.UserName.Equals(userName) && u.Password.Equals(password));
+            return data != null;
         }
 
 

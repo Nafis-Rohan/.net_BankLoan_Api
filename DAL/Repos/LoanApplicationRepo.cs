@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class LoanApplicationRepo : IRepo<LoanApplication, int, bool> , IInterestRateCount , IEMICal
+    internal class LoanApplicationRepo : IRepo<LoanApplication, int, bool> , IInterestRateCount<float> , IEMICal<float>
     {
         UMSContext db;
         public LoanApplicationRepo() { 

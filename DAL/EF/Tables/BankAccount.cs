@@ -17,7 +17,7 @@ namespace DAL.EF.Tables
 
         [ForeignKey("Ac")]
         public int AccTypeId { get; set; }
-        public virtual AccountTypes Ac {  get; set; }
+        public virtual AccTypes Ac {  get; set; }
 
 
 

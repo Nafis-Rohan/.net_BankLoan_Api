@@ -1,5 +1,7 @@
 ﻿using BLL.DTOs;
 using BLL.Services;
+using DAL.EF.Tables;
+using Presentation.Auth;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +15,8 @@ namespace Presentation.Controllers
     [RoutePrefix("api/customer")]
     public class CustomerController : ApiController
     {
-        
 
+        [Logged]
         [HttpGet]
         [Route("all")]
 
@@ -54,6 +56,7 @@ namespace Presentation.Controllers
             }
         }
 
+        [Logged]
         [HttpGet]
         [Route("all/{id}")]
 
@@ -61,12 +64,11 @@ namespace Presentation.Controllers
         {
             try
             {
-                var data = CustomerService.Get(id);
-                if (data == null)
-                {
+                var customer = CustomerService.Get(id);
+                if (customer == null)
                     return Request.CreateResponse(HttpStatusCode.NotFound, "No data found");
-                }
-                return Request.CreateResponse(HttpStatusCode.OK, data);
+
+                return Request.CreateResponse(HttpStatusCode.OK, customer);
             }
             catch (Exception ex)
             {
@@ -113,7 +115,21 @@ namespace Presentation.Controllers
         }
 
 
-
+        [HttpPost]
+        [Route("logout/{id}")]
+        public HttpResponseMessage Logout(int id)
+        {
+            try
+            {
+                
+                var a = AuthService.Logout(id);
+                return Request.CreateResponse(HttpStatusCode.OK, new { msg = "Token Expired"});
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.BadRequest, ex.Message);
+            }
+        }
 
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IInterestRateCount
+    public interface IInterestRateCount <RET> 
     {
          float CalculateInterest(int id);
     }

@@ -26,3 +26,17 @@ E:\BankLoan\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 E:\BankLoan\BLL\obj\Debug\BLL.csproj.CopyComplete
 E:\BankLoan\BLL\obj\Debug\BLL.dll
 E:\BankLoan\BLL\obj\Debug\BLL.pdb
+D:\.net_BankLoan_Api\BLL\bin\Debug\BLL.dll
+D:\.net_BankLoan_Api\BLL\bin\Debug\BLL.pdb
+D:\.net_BankLoan_Api\BLL\bin\Debug\AutoMapper.dll
+D:\.net_BankLoan_Api\BLL\bin\Debug\DAL.dll
+D:\.net_BankLoan_Api\BLL\bin\Debug\EntityFramework.dll
+D:\.net_BankLoan_Api\BLL\bin\Debug\DAL.pdb
+D:\.net_BankLoan_Api\BLL\bin\Debug\DAL.dll.config
+D:\.net_BankLoan_Api\BLL\bin\Debug\AutoMapper.xml
+D:\.net_BankLoan_Api\BLL\bin\Debug\EntityFramework.xml
+D:\.net_BankLoan_Api\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\.net_BankLoan_Api\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\.net_BankLoan_Api\BLL\obj\Debug\BLL.csproj.CopyComplete
+D:\.net_BankLoan_Api\BLL\obj\Debug\BLL.dll
+D:\.net_BankLoan_Api\BLL\obj\Debug\BLL.pdb

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL.Interfaces
 {
-    public interface IEMICal
+    public interface IEMICal<RET>
     {
         float CalculateEmi(int id);
     }

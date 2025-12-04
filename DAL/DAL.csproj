@@ -53,56 +53,116 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="DataAccessFactory.cs" />
-    <Compile Include="EF\Tables\AccountTypes.cs" />
+    <Compile Include="EF\Tables\AccTypes.cs" />
     <Compile Include="EF\Tables\BankAccount.cs" />
     <Compile Include="EF\Tables\Customer.cs" />
     <Compile Include="EF\Tables\Employments.cs" />
     <Compile Include="EF\Tables\LoanApplication.cs" />
     <Compile Include="EF\Tables\LoanTypes.cs" />
     <Compile Include="EF\Tables\Statuses.cs" />
+    <Compile Include="EF\Tables\Token.cs" />
     <Compile Include="EF\UMSContext.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\ICustomerRepo.cs" />
     <Compile Include="Interfaces\IEMICal.cs" />
     <Compile Include="Interfaces\IInterestRateCount.cs" />
-    <Compile Include="Migrations\202509260845522_first.cs" />
-    <Compile Include="Migrations\202509260845522_first.designer.cs">
-      <DependentUpon>202509260845522_first.cs</DependentUpon>
+    <Compile Include="Interfaces\IRepo.cs" />
+    <Compile Include="Migrations\202511302205499_NewDb.cs" />
+    <Compile Include="Migrations\202511302205499_NewDb.designer.cs">
+      <DependentUpon>202511302205499_NewDb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202509261144461_2nd.cs" />
-    <Compile Include="Migrations\202509261144461_2nd.designer.cs">
-      <DependentUpon>202509261144461_2nd.cs</DependentUpon>
+    <Compile Include="Migrations\202511302210075_ANewDb.cs" />
+    <Compile Include="Migrations\202511302210075_ANewDb.designer.cs">
+      <DependentUpon>202511302210075_ANewDb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202509261514322_3nd.cs" />
-    <Compile Include="Migrations\202509261514322_3nd.designer.cs">
-      <DependentUpon>202509261514322_3nd.cs</DependentUpon>
+    <Compile Include="Migrations\202511302212547_ANewDbA.cs" />
+    <Compile Include="Migrations\202511302212547_ANewDbA.designer.cs">
+      <DependentUpon>202511302212547_ANewDbA.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202509261627431_loanAppli.cs" />
-    <Compile Include="Migrations\202509261627431_loanAppli.designer.cs">
-      <DependentUpon>202509261627431_loanAppli.cs</DependentUpon>
+    <Compile Include="Migrations\202511302216136_ANewDbAB.cs" />
+    <Compile Include="Migrations\202511302216136_ANewDbAB.designer.cs">
+      <DependentUpon>202511302216136_ANewDbAB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511302218009_ANewDbAB1.cs" />
+    <Compile Include="Migrations\202511302218009_ANewDbAB1.designer.cs">
+      <DependentUpon>202511302218009_ANewDbAB1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511302219157_ANewDbAB2.cs" />
+    <Compile Include="Migrations\202511302219157_ANewDbAB2.designer.cs">
+      <DependentUpon>202511302219157_ANewDbAB2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511302224342_ANewDbAB3.cs" />
+    <Compile Include="Migrations\202511302224342_ANewDbAB3.designer.cs">
+      <DependentUpon>202511302224342_ANewDbAB3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511302226215_ANewDbAB4.cs" />
+    <Compile Include="Migrations\202511302226215_ANewDbAB4.designer.cs">
+      <DependentUpon>202511302226215_ANewDbAB4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202511302227014_ANewDbAB5.cs" />
+    <Compile Include="Migrations\202511302227014_ANewDbAB5.designer.cs">
+      <DependentUpon>202511302227014_ANewDbAB5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202512011747324_accTypeTable.cs" />
+    <Compile Include="Migrations\202512011747324_accTypeTable.designer.cs">
+      <DependentUpon>202512011747324_accTypeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202512011749367_Table.cs" />
+    <Compile Include="Migrations\202512011749367_Table.designer.cs">
+      <DependentUpon>202512011749367_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202512011951341_TokenTable.cs" />
+    <Compile Include="Migrations\202512011951341_TokenTable.designer.cs">
+      <DependentUpon>202512011951341_TokenTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repos\BankAccountRepo.cs" />
     <Compile Include="Repos\CustomerRepo.cs" />
-    <Compile Include="Repos\IRepo.cs" />
     <Compile Include="Repos\LoanApplicationRepo.cs" />
+    <Compile Include="Repos\Repo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202509260845522_first.resx">
-      <DependentUpon>202509260845522_first.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202511302205499_NewDb.resx">
+      <DependentUpon>202511302205499_NewDb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509261144461_2nd.resx">
-      <DependentUpon>202509261144461_2nd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202511302210075_ANewDb.resx">
+      <DependentUpon>202511302210075_ANewDb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509261514322_3nd.resx">
-      <DependentUpon>202509261514322_3nd.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202511302212547_ANewDbA.resx">
+      <DependentUpon>202511302212547_ANewDbA.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202509261627431_loanAppli.resx">
-      <DependentUpon>202509261627431_loanAppli.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202511302216136_ANewDbAB.resx">
+      <DependentUpon>202511302216136_ANewDbAB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511302218009_ANewDbAB1.resx">
+      <DependentUpon>202511302218009_ANewDbAB1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511302219157_ANewDbAB2.resx">
+      <DependentUpon>202511302219157_ANewDbAB2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511302224342_ANewDbAB3.resx">
+      <DependentUpon>202511302224342_ANewDbAB3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511302226215_ANewDbAB4.resx">
+      <DependentUpon>202511302226215_ANewDbAB4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511302227014_ANewDbAB5.resx">
+      <DependentUpon>202511302227014_ANewDbAB5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202512011747324_accTypeTable.resx">
+      <DependentUpon>202512011747324_accTypeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202512011749367_Table.resx">
+      <DependentUpon>202512011749367_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202512011951341_TokenTable.resx">
+      <DependentUpon>202512011951341_TokenTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

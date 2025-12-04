@@ -114,9 +114,9 @@ namespace BLL.Services
             var loan = DataAccessFactory.LoanApplicationData().Get(id);
             if (loan == null) throw new Exception("Loan not found");
 
-            int newStatusId = 2;
-            
-            loan.StatusId = newStatusId;
+
+
+            if (loan.StatusId != 2) { loan.StatusId = 2; }
 
             
             var account = (from a in DataAccessFactory.BankAccountData().Get()

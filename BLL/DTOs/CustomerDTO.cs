@@ -18,6 +18,8 @@ namespace BLL.DTOs
 
         public int CreditScore { get; set; }
 
+        public string UserName { get; set; }
+
         
         public int EId { get; set; }
     }

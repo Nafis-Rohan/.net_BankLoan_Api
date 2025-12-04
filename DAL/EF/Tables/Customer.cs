@@ -14,17 +14,22 @@ namespace DAL.EF.Tables
         [Key]
         public int Id { get; set; }
 
-
+        public string UserName { get; set; }
 
         [Required]
         [StringLength(200)]
         [Column(TypeName = "VARCHAR")]
         public string Name { get; set; }
 
+        [Required]
+        [StringLength(200)]
+        [Column(TypeName = "VARCHAR")]
+        public string Password { get; set; }
 
 
         [Column(TypeName = "FLOAT")]
         public float Income { get; set; }
+
 
 
 
